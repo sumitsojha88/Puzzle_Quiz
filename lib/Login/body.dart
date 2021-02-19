@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:puzzle_riddle_apti_app/Login/background.dart';
+import 'package:puzzle_riddle_apti_app/signup/signup.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/have_account.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/round_button.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/round_field.dart';
@@ -45,7 +46,7 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
               press: () {
-            //    Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen()));
 
               },
             ),
