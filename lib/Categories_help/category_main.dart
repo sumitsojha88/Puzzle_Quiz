@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_aptitude.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_gk.dart';
+import 'package:puzzle_riddle_apti_app/Categories_help/category_page_logo.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_puzzle.dart';
+import 'package:puzzle_riddle_apti_app/Categories_help/category_page_riddle.dart';
 
 
 
@@ -108,14 +110,10 @@ class _MyHomePageState extends State<MyHomePage>
                   controller: _tabController,
                   children: [
                     Categorypuzzle(),
-                    Categorypuzzle(),
+                    Categoryriddle(),
                     Categorygk(),
                     Categoryapti(),
-                    Categorypuzzle(),
-                  //  Categoryriddle(),
-                 //   Categorygk(),
-                  //  Categoryapti(),
-                 //   Categorylogo(),
+                    Categorylogo(),
                   ]
               )
           )
