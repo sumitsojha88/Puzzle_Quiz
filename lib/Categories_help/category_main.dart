@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:puzzle_riddle_apti_app/Categories_help/category_page_aptitude.dart';
+import 'package:puzzle_riddle_apti_app/Categories_help/category_page_gk.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_puzzle.dart';
 
 
@@ -105,14 +107,11 @@ class _MyHomePageState extends State<MyHomePage>
               child: TabBarView(
                   controller: _tabController,
                   children: [
-
                     Categorypuzzle(),
                     Categorypuzzle(),
+                    Categorygk(),
+                    Categoryapti(),
                     Categorypuzzle(),
-                    Categorypuzzle(),
-                    Categorypuzzle(),
-
-
                   //  Categoryriddle(),
                  //   Categorygk(),
                   //  Categoryapti(),
