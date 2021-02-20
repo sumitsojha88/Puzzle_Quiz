@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:puzzle_riddle_apti_app/Category_puzzle_components/Category_puzzle_details.dart';
 
 
 
@@ -45,12 +46,7 @@ class Categorypuzzle extends StatelessWidget {
         padding: EdgeInsets.only(top: 5.0, bottom: 5.0, left: 5.0, right: 5.0),
         child: InkWell(
             onTap: () {
-             //     Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage()));
-                 /* MaterialPageRoute(builder: (context) => CookieDetail(
-                      assetPath: imgPath,
-                  //    cookieprice:level,
-                      cookiename: name
-                  ))); */
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage()));
             },
             child: Container(
                 decoration: BoxDecoration(

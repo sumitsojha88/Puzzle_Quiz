@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:puzzle_riddle_apti_app/constants.dart';
+import 'package:puzzle_riddle_apti_app/screens/quiz/quiz_screen.dart';
 
 
 
@@ -89,7 +90,9 @@ class levelsScreen extends StatelessWidget {
                         LevelCard(
                           LevelNum: 1,
                           isDone: true,
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => QuizScreen()));
+                          },
                         ),
                         LevelCard(
                           LevelNum: 2,

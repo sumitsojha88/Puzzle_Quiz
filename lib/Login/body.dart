@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:puzzle_riddle_apti_app/Login/background.dart';
+import 'package:puzzle_riddle_apti_app/menu_bar/sidebar_layout.dart';
 import 'package:puzzle_riddle_apti_app/signup/signup.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/have_account.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/round_button.dart';
@@ -53,7 +54,7 @@ class Body extends StatelessWidget {
             RoundedButton(
               text: "LOGIN",
               press: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => QuizScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SideBarLayout()));
               },
             ),
           ],
