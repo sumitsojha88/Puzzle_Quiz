@@ -4,11 +4,12 @@ import 'package:puzzle_riddle_apti_app/Categories_help/category_page_gk.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_logo.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_puzzle.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_riddle.dart';
+import 'package:puzzle_riddle_apti_app/menu_bar/navigation.dart';
 
 
 
 
-class MyHomePage extends StatefulWidget /* with NavigationStates */ {
+class MyHomePage extends StatefulWidget  with NavigationStates  {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
