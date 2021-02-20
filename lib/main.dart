@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:puzzle_riddle_apti_app/Categories_help/category_main.dart';
 
 import 'package:puzzle_riddle_apti_app/Login/login.dart';
 import 'package:puzzle_riddle_apti_app/screens/quiz/quiz_screen.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Quiz App',
       debugShowCheckedModeBanner: false,
       // theme: ThemeData.dark(),
-      home: Loginpage2(),
+      home: MyHomePage(),
     );
   }
 }
