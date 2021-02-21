@@ -38,14 +38,14 @@ class _RiddleDetailPageState extends State<RiddleDetailPage> {
                         fit: BoxFit.cover)),
                 child: Container(
                   decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [
+                      gradient: LinearGradient( begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
                         Colors.black.withOpacity(0.9),
                         Colors.black.withOpacity(0.5),
                         Colors.black.withOpacity(0.0),
                         Colors.black.withOpacity(0.0),
                         Colors.black.withOpacity(0.5),
                         Colors.black.withOpacity(0.9),
-                      ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
+                      ]),),
                 ),
               ),
               Container(

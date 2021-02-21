@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "215330684110",
+    "project_id": "puzzle-quiz-b1a1f",
+    "storage_bucket": "puzzle-quiz-b1a1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215330684110:android:314047e6e1c961adb9e49f",
+        "android_client_info": {
+          "package_name": "com.example.puzzle_riddle_apti_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215330684110-q9kqt5ug5m9itr7pic0rmlb1n20u18s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh6ReDl1lGLxTmoUOZnGX1CFr19myFowM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215330684110-q9kqt5ug5m9itr7pic0rmlb1n20u18s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
