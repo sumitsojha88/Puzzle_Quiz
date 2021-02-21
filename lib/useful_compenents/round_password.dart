@@ -3,6 +3,9 @@ import 'package:puzzle_riddle_apti_app/useful_compenents/text_field.dart';
 
 
 class RoundedPasswordField extends StatefulWidget{
+  final ValueChanged<String> onChanged;
+  RoundedPasswordField({this.onChanged});
+
   @override
   RoundedPasswordFieldState createState() => RoundedPasswordFieldState();
 }
@@ -11,7 +14,6 @@ class RoundedPasswordField extends StatefulWidget{
 
 class RoundedPasswordFieldState extends State<RoundedPasswordField> {
 
-  // final ValueChanged<String> onChanged;
   bool passwordstate = true;
 
   @override
@@ -19,7 +21,7 @@ class RoundedPasswordFieldState extends State<RoundedPasswordField> {
     return TextFieldContainer(
       child: TextField(
         obscureText: passwordstate,
-        //     onChanged: onChanged,
+        onChanged: widget.onChanged,
         cursorColor: Colors.blue,
         decoration: InputDecoration(
           hintText: "Enter Your Password",
