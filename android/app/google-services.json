@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "215330684110",
-    "project_id": "puzzle-quiz-b1a1f",
-    "storage_bucket": "puzzle-quiz-b1a1f.appspot.com"
+    "project_number": "982953596073",
+    "project_id": "puzzle-quiz-5d1ca",
+    "storage_bucket": "puzzle-quiz-5d1ca.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:215330684110:android:314047e6e1c961adb9e49f",
+        "mobilesdk_app_id": "1:982953596073:android:581a217f5346bd630c45b8",
         "android_client_info": {
           "package_name": "com.example.puzzle_riddle_apti_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "215330684110-q9kqt5ug5m9itr7pic0rmlb1n20u18s7.apps.googleusercontent.com",
+          "client_id": "982953596073-7je6me3saoiht20thci1f4fk15mjglvc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCh6ReDl1lGLxTmoUOZnGX1CFr19myFowM"
+          "current_key": "AIzaSyBt3KR5AulJUdCuGRuYaOR5WabSROy4tpI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "215330684110-q9kqt5ug5m9itr7pic0rmlb1n20u18s7.apps.googleusercontent.com",
+              "client_id": "982953596073-7je6me3saoiht20thci1f4fk15mjglvc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
