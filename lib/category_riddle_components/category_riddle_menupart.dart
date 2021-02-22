@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:puzzle_riddle_apti_app/Category_puzzle_components/category_puzzle_details_model.dart';
 import 'package:puzzle_riddle_apti_app/category_riddle_components/Category_riddle_puzzle.dart';
@@ -26,7 +24,9 @@ class MenuItemCard extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => RiddleDetailPage(
                             index: index,
-                          )));
+                          )
+                      )
+                  );
                 },
                 child: Row(
                   children: <Widget>[
