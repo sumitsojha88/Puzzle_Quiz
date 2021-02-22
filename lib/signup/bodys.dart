@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:puzzle_riddle_apti_app/Login/login.dart';
 import 'package:puzzle_riddle_apti_app/menu_bar/sidebar_layout.dart';
 import 'package:puzzle_riddle_apti_app/signup/backgrounds.dart';
+import 'package:puzzle_riddle_apti_app/useful_compenents/Check_box_state.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/have_account2.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/round_button.dart';
 import 'package:puzzle_riddle_apti_app/useful_compenents/round_field.dart';
@@ -53,18 +54,7 @@ class Body2 extends StatelessWidget {
             }),
             RoundedPasswordField2(),
             SizedBox(height: size.height * 0.02),
-            CheckboxListTile(
-                activeColor: Theme.of(context).accentColor,
-                title: Text(
-                  'I agree with all terms and condition',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 16,
-                  ),
-                ),
-                value: false,
-                onChanged: null),
+            Checkboxsignup(),
             SizedBox(height: size.height * 0.02),
             AlreadyHaveAnAccountCheck2(
               press: () {
