@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage>
         title: Text('DASHBOARD',
             style: TextStyle(
                 fontFamily: 'Varela',
-                fontSize: 20.0,
+                fontSize: 30.0,
                 color: Color(0xFF545D68))),
         actions: <Widget>[
           IconButton(
@@ -47,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage>
           ),
         ],
       ),
+
 
       body: ListView(
         padding: EdgeInsets.only(left: 20.0),
