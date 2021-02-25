@@ -24,13 +24,13 @@ class Categorygk extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard('Sports', 'assets/cookiemint.jpg',
+                  _buildCard('Sports', 'assets/images/money_logo.png',
                       false, false, context),
-                  _buildCard('World affairs', 'assets/cookiecream.jpg',
+                  _buildCard('World affairs', 'assets/images/money_logo.png',
                       true, false, context),
                   _buildCard('Cookie classic',
-                      'assets/cookieclassic.jpg', false, true, context),
-                  _buildCard('Cookie choco', 'assets/cookiechoco.jpg',
+                      'assets/images/money_logo.png', false, true, context),
+                  _buildCard('Cookie choco', 'assets/images/money_logo.png',
                       false, false, context)
                 ],
               )),
