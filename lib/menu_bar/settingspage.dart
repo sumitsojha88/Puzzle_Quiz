@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:puzzle_riddle_apti_app/Settings_components/Change_password_screen.dart';
 
 
 
@@ -52,7 +53,10 @@ class _SettingsPage2State extends State<SettingsPage2> {
                 border: Border.all(color: Colors.blueAccent),
               ),
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => changescreenpassword()));
+                },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: Row(
@@ -78,6 +82,9 @@ class _SettingsPage2State extends State<SettingsPage2> {
                   ),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 10,
             ),
             Container(
               height: 45,

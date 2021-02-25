@@ -23,13 +23,13 @@ class Categorylogo extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard('Companies Logo', 'assets/cookiemint.jpg',
+                  _buildCard('Companies Logo', 'assets/images/money_logo.png',
                       false, false, context),
-                  _buildCard('Sports Team Quiz', 'assets/cookiecream.jpg',
+                  _buildCard('Sports Team Quiz', 'assets/images/money_logo.png',
                       true, false, context),
                   _buildCard('Instituion Logo',
-                      'assets/cookieclassic.jpg', false, false, context),
-                  _buildCard('Country Flag', 'assets/cookiechoco.jpg',
+                      'assets/images/money_logo.png', false, false, context),
+                  _buildCard('Country Flag', 'assets/images/money_logo.png',
                       false, false, context)
                 ],
               )),

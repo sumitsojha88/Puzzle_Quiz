@@ -24,13 +24,13 @@ class Categorypuzzle extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard('Money Puzzle', 'assets/cookiemint.jpg',
+                  _buildCard('Money Puzzle', 'assets/images/money_logo.png',
                       false, false, context),
-                  _buildCard('Clock Puzzle', 'assets/cookiecream.jpg',
+                  _buildCard('Clock Puzzle', 'assets/images/money_logo.png',
                       true, false, context),
                   _buildCard('Age Puzzle',
-                      'assets/cookieclassic.jpg', false, false, context),
-                  _buildCard('Distance Speed', 'assets/cookiechoco.jpg',
+                      'assets/images/money_logo.png', false, false, context),
+                  _buildCard('Distance Speed', 'assets/images/money_logo.png',
                       false, false, context)
                 ],
               )),
@@ -87,8 +87,6 @@ class Categorypuzzle extends StatelessWidget {
                           color: Color(0xFF575E67),
                           fontFamily: 'Varela',
                           fontSize: 18.0)),
-
-
                 ]
                 )
             )
