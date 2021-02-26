@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:puzzle_riddle_apti_app/Animation_components/Category_title_animation.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_aptitude.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_gk.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_logo.dart';
@@ -53,11 +54,7 @@ class _MyHomePageState extends State<MyHomePage>
         padding: EdgeInsets.only(left: 20.0),
         children: <Widget>[
           SizedBox(height: 15.0),
-          Text('  Categories',
-              style: TextStyle(
-                  fontFamily: 'Varela',
-                  fontSize: 42.0,
-                  fontWeight: FontWeight.bold)),
+          CategorytitleAnimation(),
           SizedBox(height: 15.0),
           TabBar(
               controller: _tabController,

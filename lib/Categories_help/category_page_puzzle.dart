@@ -24,7 +24,7 @@ class Categorypuzzle extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard('Money Puzzle', 'assets/images/money_logo.png',
+                  _buildCard('Money Puzzle', 'assets/images/money2.png',
                       false, false, context),
                   _buildCard('Clock Puzzle', 'assets/images/money_logo.png',
                       true, false, context),
