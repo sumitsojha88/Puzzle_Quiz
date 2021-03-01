@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:puzzle_riddle_apti_app/Category_puzzle_components/Category_puzzle_details.dart';
 import 'package:puzzle_riddle_apti_app/Login/login.dart';
 import 'package:puzzle_riddle_apti_app/menu_bar/sidebar_layout.dart';
 
