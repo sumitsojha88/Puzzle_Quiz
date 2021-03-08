@@ -17,6 +17,9 @@ dependencies:
   get: ^3.24.0
   firebase_core: "0.7.0"
   firebase_auth: "^0.20.0+1"
+  line_awesome_flutter: ^1.0.1
+  flutter_screenutil: ^1.0.2
+  animated_theme_switcher: ^1.0.5
 
 dev_dependencies:
   flutter_test:

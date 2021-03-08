@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:puzzle_riddle_apti_app/Animation_components/Category_title_animation.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_aptitude.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_gk.dart';
 import 'package:puzzle_riddle_apti_app/Categories_help/category_page_logo.dart';
@@ -38,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage>
         title: Text('DASHBOARD',
             style: TextStyle(
                 fontFamily: 'Varela',
-                fontSize: 20.0,
+                fontSize: 30.0,
                 color: Color(0xFF545D68))),
         actions: <Widget>[
           IconButton(
@@ -48,15 +49,12 @@ class _MyHomePageState extends State<MyHomePage>
         ],
       ),
 
+
       body: ListView(
         padding: EdgeInsets.only(left: 20.0),
         children: <Widget>[
           SizedBox(height: 15.0),
-          Text('  Categories',
-              style: TextStyle(
-                  fontFamily: 'Varela',
-                  fontSize: 42.0,
-                  fontWeight: FontWeight.bold)),
+          CategorytitleAnimation(),
           SizedBox(height: 15.0),
           TabBar(
               controller: _tabController,

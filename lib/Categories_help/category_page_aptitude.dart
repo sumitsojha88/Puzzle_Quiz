@@ -23,13 +23,13 @@ class Categoryapti extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard('Money Puzzle', 'assets/cookiemint.jpg',
+                  _buildCard('Simple Interest', 'aassets/images/money_logo.png',
                       false, false, context),
-                  _buildCard('Clock Puzzle', 'assets/cookiecream.jpg',
+                  _buildCard('Clock Puzzle', 'assets/images/money_logo.png',
                       true, false, context),
                   _buildCard('Age Puzzle',
-                      'assets/cookieclassic.jpg', false, false, context),
-                  _buildCard('Distance Speed', 'assets/cookiechoco.jpg',
+                      'assets/images/money_logo.png', false, false, context),
+                  _buildCard('Distance Speed', 'assets/images/money_logo.png',
                       false, false, context)
                 ],
               )),

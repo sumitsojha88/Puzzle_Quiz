@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:puzzle_riddle_apti_app/level_page/level_page_details.dart';
+import 'package:puzzle_riddle_apti_app/menu_bar/sidebar_layout.dart';
 
 
 class DetailPage extends StatefulWidget {
@@ -154,15 +155,15 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ),
               Positioned(
-                left: 30,
+                left: 5,
                 top: height * 0.05,
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SideBarLayout()));
                   },
                   child: Icon(
-                    Icons.keyboard_backspace,
-                    size: 42,
+                    Icons.home,
+                    size: 35,
                     color: Colors.white,
                   ),
                 ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:puzzle_riddle_apti_app/constants.dart';
+import 'package:puzzle_riddle_apti_app/menu_bar/sidebar_layout.dart';
 import 'package:puzzle_riddle_apti_app/screens/quiz/quiz_screen.dart';
 
 
@@ -15,8 +16,10 @@ class levelsScreen extends StatelessWidget {
         elevation: 0.0,
         centerTitle: true,
          leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color(0xFF545D68)),
-          onPressed: () {},
+          icon: Icon(Icons.home,size: 35, color: Color(0xFF545D68)),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => SideBarLayout()));
+          },
         ),
         actions: <Widget>[
           IconButton(

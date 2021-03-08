@@ -3,6 +3,7 @@ import 'package:puzzle_riddle_apti_app/Categories_help/category_main.dart';
 import 'package:puzzle_riddle_apti_app/menu_bar/menu_homepage.dart';
 import 'package:puzzle_riddle_apti_app/menu_bar/myaccountspage.dart';
 import 'package:puzzle_riddle_apti_app/menu_bar/myorderspage.dart';
+import 'package:puzzle_riddle_apti_app/menu_bar/settings.dart';
 
 
 
@@ -10,6 +11,7 @@ enum NavigationEvents {
   HomePageClickedEvent,
   MyAccountClickedEvent,
   MyOrdersClickedEvent,
+  SettingspageClickedEvent,
 }
 
 abstract class NavigationStates {}
@@ -29,6 +31,12 @@ class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
         break;
       case NavigationEvents.MyOrdersClickedEvent:
         yield MyOrdersPage();
+        break;
+      case NavigationEvents.MyAccountClickedEvent:
+        yield MyAccountsPage();
+        break;
+      case NavigationEvents.SettingspageClickedEvent:
+        yield SettingsPage();
         break;
     }
   }

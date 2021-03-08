@@ -141,6 +141,10 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                       MenuItem(
                         icon: Icons.settings,
                         title: "Settings",
+                        onTap: () {
+                          onIconPressed();
+                          BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.SettingspageClickedEvent);
+                        },
                       ),
                       MenuItem(
                         icon: Icons.exit_to_app,
