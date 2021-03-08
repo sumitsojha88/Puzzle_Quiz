@@ -24,13 +24,13 @@ class Categorypuzzle extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard('Money Puzzle', 'assets/images/money2.png',
+                  _buildCard('Money Puzzle', 'assets/cookiemint.jpg',
                       false, false, context),
-                  _buildCard('Clock Puzzle', 'assets/images/money_logo.png',
+                  _buildCard('Clock Puzzle', 'assets/cookiecream.jpg',
                       true, false, context),
                   _buildCard('Age Puzzle',
-                      'assets/images/money_logo.png', false, false, context),
-                  _buildCard('Distance Speed', 'assets/images/money_logo.png',
+                      'assets/cookieclassic.jpg', false, false, context),
+                  _buildCard('Distance Speed', 'assets/cookiechoco.jpg',
                       false, false, context)
                 ],
               )),
@@ -47,6 +47,11 @@ class Categorypuzzle extends StatelessWidget {
         child: InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage()));
+              /* MaterialPageRoute(builder: (context) => CookieDetail(
+                      assetPath: imgPath,
+                  //    cookieprice:level,
+                      cookiename: name
+                  ))); */
             },
             child: Container(
                 decoration: BoxDecoration(
@@ -59,7 +64,7 @@ class Categorypuzzle extends StatelessWidget {
                     ],
                     color: Colors.white),
                 child: Column(children: [
-                  Padding(
+                  /*   Padding(
                       padding: EdgeInsets.all(5.0),
                       child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -68,7 +73,7 @@ class Categorypuzzle extends StatelessWidget {
                                 ? Icon(Icons.favorite, color: Color(0xFFEF7532))
                                 : Icon(Icons.favorite_border,
                                 color: Color(0xFFEF7532))
-                          ])),
+                          ])), */
                   Hero(
                       tag: imgPath,
                       child: Container(
@@ -87,6 +92,8 @@ class Categorypuzzle extends StatelessWidget {
                           color: Color(0xFF575E67),
                           fontFamily: 'Varela',
                           fontSize: 18.0)),
+
+
                 ]
                 )
             )

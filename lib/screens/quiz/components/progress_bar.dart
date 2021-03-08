@@ -6,6 +6,7 @@ import 'package:websafe_svg/websafe_svg.dart';
 
 import '../../../constants.dart';
 
+
 class ProgressBar extends StatelessWidget {
   const ProgressBar({
     Key key,
@@ -15,7 +16,7 @@ class ProgressBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 35,
+      height: 25,
       decoration: BoxDecoration(
         border: Border.all(color: Color(0xFF3F4768), width: 3),
         borderRadius: BorderRadius.circular(50),
@@ -32,6 +33,7 @@ class ProgressBar extends StatelessWidget {
                   // from 0 to 1 it takes 60s
                   width: constraints.maxWidth * controller.animation.value,
                   decoration: BoxDecoration(
+                    color: Colors.orangeAccent,
                     gradient: kPrimaryGradient,
                     borderRadius: BorderRadius.circular(50),
                   ),
@@ -44,8 +46,8 @@ class ProgressBar extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("${(controller.animation.value * 60).round()} sec"),
-                      WebsafeSvg.asset("assets/icons/clock.svg"),
+                      Text(" ${(60- controller.animation.value * 60).round()} sec"),
+                      //   WebsafeSvg.asset("assets/icons/clock.svg"),
                     ],
                   ),
                 ),

@@ -8,6 +8,7 @@ import 'package:websafe_svg/websafe_svg.dart';
 import 'progress_bar.dart';
 import 'question_card.dart';
 
+
 class Body extends StatelessWidget {
   const Body({
     Key key,
@@ -16,28 +17,26 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // So that we have acccess our controller
+    // Background
+  //  backgroundColor: Colors.black;
     QuestionController _questionController = Get.put(QuestionController());
     return Stack(
+
       children: [
-        WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
+        // WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
         SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                child: ProgressBar(),
-              ),
               SizedBox(height: kDefaultPadding),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: Obx(
-                  () => Text.rich(
+                      () => Text.rich(
                     TextSpan(
                       text:
-                          "Question ${_questionController.questionNumber.value}",
+                      "Question ${_questionController.questionNumber.value}",
                       style: Theme.of(context)
                           .textTheme
                           .headline4
@@ -56,6 +55,12 @@ class Body extends StatelessWidget {
                 ),
               ),
               Divider(thickness: 1.5),
+              Padding(
+                padding:
+                const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                child: ProgressBar(),
+              ),
+
               SizedBox(height: kDefaultPadding),
               Expanded(
                 child: PageView.builder(
@@ -68,6 +73,7 @@ class Body extends StatelessWidget {
                       question: _questionController.questions[index]),
                 ),
               ),
+
             ],
           ),
         )

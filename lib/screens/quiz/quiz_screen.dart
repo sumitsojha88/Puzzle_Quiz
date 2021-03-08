@@ -5,6 +5,7 @@ import 'package:puzzle_riddle_apti_app/controllers/question_controller.dart';
 
 import 'components/body.dart';
 
+
 class QuizScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,13 +16,9 @@ class QuizScreen extends StatelessWidget {
         // Fluttter show the back button automatically
         backgroundColor: Colors.transparent,
         elevation: 0,
-        actions: [
-          FlatButton(onPressed: _controller.nextQuestion,
-              child: Text("Skip",
-              style: TextStyle(
-                color: Colors.white,
-              ),)),
-        ],
+        /* actions: [
+          FlatButton(onPressed: _controller.nextQuestion, child: Text("Skip")),
+        ], */
       ),
       body: Body(),
     );

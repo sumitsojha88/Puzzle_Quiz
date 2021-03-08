@@ -5,6 +5,7 @@ import 'package:puzzle_riddle_apti_app/controllers/question_controller.dart';
 
 import '../../../constants.dart';
 
+
 class Option extends StatelessWidget {
   const Option({
     Key key,
@@ -30,7 +31,7 @@ class Option extends StatelessWidget {
                 return kRedColor;
               }
             }
-            return kGrayColor;
+            return kBlackColor;
           }
 
           IconData getTheRightIcon() {
@@ -51,11 +52,11 @@ class Option extends StatelessWidget {
                 children: [
                   Text(
                     "${index + 1}. $text",
-                    style: TextStyle(color: getTheRightColor(), fontSize: 16),
+                    style: TextStyle(color: getTheRightColor(), fontSize: 20),
                   ),
                   Container(
-                    height: 26,
-                    width: 26,
+                    height: 20,
+                    width: 20,
                     decoration: BoxDecoration(
                       color: getTheRightColor() == kGrayColor
                           ? Colors.transparent
@@ -65,7 +66,7 @@ class Option extends StatelessWidget {
                     ),
                     child: getTheRightColor() == kGrayColor
                         ? null
-                        : Icon(getTheRightIcon(), size: 16),
+                        : Icon(getTheRightIcon(), size: 10),
                   )
                 ],
               ),
